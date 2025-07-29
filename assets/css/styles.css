@@ -1,0 +1,123 @@
+/* 1) Custom Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;600;800&display=swap');
+
+/* 2) CSS Variables for Theme Colors */
+:root {
+  --primary-color: #244273;      /* Sterling blue */
+  --secondary-color: #f0f0f0;    /* Light grey */
+  --accent-color: #66c;          /* Example accent */
+  --font-sans: 'Roboto', sans-serif;
+  --font-heading: 'Open Sans', sans-serif;
+}
+
+/* 3) Base Typography */
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: #333;
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  margin-top: 1.4em;
+  margin-bottom: 0.6em;
+}
+
+/* 4) Menu Box & Dropdown Styling */
+.navbar {
+  background: var(--primary-color);
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.navbar .nav-left, .navbar .nav-right {
+  display: flex;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  margin-left: 1rem;
+}
+.dropbtn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.3s ease;
+}
+.dropbtn:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 160px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+  z-index: 10;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.dropdown-content a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.dropdown-content a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* 5) Icon & Button Transitions */
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+/* 6) Card & Section Transitions */
+section {
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+section:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* 7) Responsive Font Scaling */
+@media (max-width: 768px) {
+  body { font-size: 0.95rem; }
+  h1 { font-size: 1.6rem; }
+  .dropbtn { font-size: 0.9rem; }
+}
