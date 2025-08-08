@@ -58,7 +58,7 @@ LIVE URL LINK: https://khamzal.myweb.cs.uwindsor.ca/schoolstore/
 3. **Create the database**:
 
    ```sql
-   -- in your MySQL client:
+   -- in MySQL client:
    CREATE DATABASE schoolstore_db CHARACTER SET utf8mb4;
    USE schoolstore_db;
    SOURCE schoolstore_db.sql;
