@@ -1,6 +1,6 @@
 # MK’s School Supplies Store
 
-![alt text](https://github.com/makhskham/mk-school-supplies/images/homepage.png "MK's School Supplies Store")
+![alt text](images/homepage.png "MK's School Supplies Store")
 This repository contains the full source code (PHP, JavaScript, CSS) and database schema (MySQL) for the MK’s School Supplies Store e‑commerce application.
 
 LIVE URL LINK: https://khamzal.myweb.cs.uwindsor.ca/schoolstore/
